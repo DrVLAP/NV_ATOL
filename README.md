@@ -1,3 +1,5 @@
+Для автоматизации был выбран язык Ruby в связке с Capybara + Cucumber, т.к. окружение уже было поднято и настроено, поэтому так было быстрее
+
 Структура проекта:
 - features\hh_tests\auth_tests.feature <- Сценарии
 - features\step_definitions\steps.rb <- Описания шагов
