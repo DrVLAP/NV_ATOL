@@ -1,7 +1,7 @@
 Структура проекта:
-features\hh_tests\auth_tests.feature <- Сценарии
-features\step_definitions\steps.rb <- Описания шагов
-features\support\Page_elements\elements.rb <- Константы для переиспользования в шагах
+- features\hh_tests\auth_tests.feature <- Сценарии
+- features\step_definitions\steps.rb <- Описания шагов
+- features\support\Page_elements\elements.rb <- Константы для переиспользования в шагах
 
 Чеклист:
 1) Кейсы для проверки авторизации:
