@@ -58,7 +58,6 @@ Then /^I should see next error: (.*?)$/ do |error|
 end
 
 Then /^Auth button should be disabled$/ do
-  # button = find("button[data-testid='Submit'][disabled]")
   button = find("#{AUTH_BUTTON}[disabled]")
   expect(button[:disabled]).to eq('true')
 end
