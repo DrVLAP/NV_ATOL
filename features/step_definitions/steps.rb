@@ -3,7 +3,7 @@ Given /^(.*?) page is opened$/ do |site|
 end
 
 When /^I add login: (.*?)$/ do |login|
-  #
+  # Correct login and pass can be moved to some config
   login = if login == 'correct_email'
             'test@sigma.ru'
           elsif login == 'correct_phone'
@@ -24,6 +24,7 @@ When /^I add password: (.*?)$/ do |password|
 end
 
 When /^I set password visibility to (true|false)$/ do |visible|
+  # Not a best locators to use, but for now they looks most valid
   if page.has_xpath?("path[fill='#5F5F5F']")
     if visible == 'false'
       all(:css, 'svg g path').last.click
